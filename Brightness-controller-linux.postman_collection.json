@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "fdb3e3d6-b625-4dc7-86e0-3845e53ba07e",
+		"name": "Brightness-controller-linux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get List of connected monitors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/monitors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"monitors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Brightness level by monitors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/monitors-brightness/0.7/HDMI-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"monitors-brightness",
+						"0.7",
+						"HDMI-1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
